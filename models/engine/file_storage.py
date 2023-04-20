@@ -40,7 +40,7 @@ class FileStorage:
         """
         with open(self.__file_path, 'w+') as f:
             json.dump({k: v.to_dict() for k, v in self.__objects.items()
-                       }, f)
+                    }, f)
 
     def reload(self):
         """
